@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+.rojo{background-color:black;color:white;}
+.oculto{display:none;}
+body{font-family:Verdana, Geneva, sans-serif; font-size:.8em;}
+#cargando{
+	position:absolute;
+	top:5px;
+	right:5px;
+	background-color:red;
+	color:white;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	padding:5px;
+	}
+
+.tabla{
+	background-color:blue;	
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:.8em;
+	color:white;
+	text-align:center;
+}
+.tabla td{
+	font-size:smaller;
+	text-align:center;
+	color:white;
+	}
+#meteoclima{
+width:50%;
+}
+.cargando{
+	position:absolute;
+	top:5px;
+	right:5px;
+	background-color:red;
+	color:white;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	padding:5px;
+	}
+#pie
+{position:absolute;bottom:0;}

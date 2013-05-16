@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/woeid.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/woeid.js"></script>
+<script>
+$(document).ready(function(e) { 
+
+$('#localizar').click(function()
+	{
+	$('#resultado').localizaxml($('[name="ciudad"]').val(),'#resultado');
+	}
+);
+
+}); //fin document ready
+</script>
+<title>Localizador del Woeid</title>
+
+</head>
+
+<body>
+<div id="meteoclima" class="izquierda">
+	<div id="yahoo">Encuentra tu codigo WOEID:</div>
+	<div id="prova" class="rojo"></div>
+	<div id="tabla"></div>
+
+	<div id="cargando" class="oculto"> Espere por favor. Cargando datos....</div>
+    <div id="fallo" class="oculto cargando"> Fallo en la carga de datos !!</div>
+    
+    	<span>Elige la ciudad o pueblo:</span><input type="text" name="ciudad" />
+        <button type="buttom" id="localizar">Encuentra</button>
+    	<div id="resultado"></div>
+        
+</div>
+<div id="pie">
+<span>© Creado por Valentin Luque. 2013 <a target="_blank" href="http://www.artinfinity.net">www.artinfinity.net |</a> <a target="_blank" href="http://krack.artinfinity.net">Krack</span>
+</div>
+</body>
+</html>
